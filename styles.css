@@ -1,0 +1,9 @@
+
+.mainButtons {
+    display: inline;
+}
+
+/* reset button shouldn't always be visible */
+#reset {
+    display: none;
+}
