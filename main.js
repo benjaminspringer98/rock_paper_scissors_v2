@@ -22,13 +22,14 @@ function playRound() {
         playerPoints++;
         playerPointsPara.textContent = "Player Points: " + playerPoints;
 
-    if (playerPoints === 5) {
-        resultsPara.textContent = "You win the game!";
-        showResetButton();
-    }
-        
-    resultsPara.textContent = "You win the round!";
+        if (playerPoints === 5) {
+            resultsPara.textContent = "You win the game!";
+            showResetButton();
         }
+        else {
+            resultsPara.textContent = "You win the round!";
+        }
+    }
     else if (playerSelection === computerSelection) {
         resultsPara.textContent = "It's a tie!";    
     }
@@ -40,14 +41,15 @@ function playRound() {
             resultsPara.textContent = "You lose the game!";
             showResetButton();
         }
-
-        resultsPara.textContent = "You lose the round!";   
+        else {
+            resultsPara.textContent = "You lose the round!";  
+        } 
     }
 }
 
 // hides main buttons when reset button is shown
 function hideMainButtons() {
-    const div = document.querySelector(".mainButtons");
+    const div = document.querySelector("#mainButtons");
     div.setAttribute("style", "display: none");
 }
 
@@ -65,8 +67,8 @@ function resetGame() {
     computerPointsPara.textContent = "Computer Points: " + computerPoints;
     resultsPara.textContent = "";
     resetButton.setAttribute("style", "display: none"); // hide reset button
-    const div = document.querySelector(".mainButtons");
-    div.setAttribute("style", "display: inline"); // show main buttons again
+    const div = document.querySelector("#mainButtons");
+    div.setAttribute("style", "display: flex"); // show main buttons again
 }
 
 function computerPlay() {

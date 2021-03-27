@@ -1,6 +1,37 @@
+body {
+    background-color: #D7C49EFF;
+    font-family: 'Courier New', Courier, monospace;
+}
 
-.mainButtons {
+#mainButtons {
+    display: flex;
+    justify-content: center;
+}
+
+button {
     display: inline;
+    font-family: 'Courier New', Courier, monospace;
+    width: 20%;
+    background-color: #343148FF;
+    color: white;
+    border: none;
+    padding: 15px;
+    margin: 8px;
+}
+
+button:hover {
+    box-shadow: 1px 1px 5px 1px darkgray;
+    transform: scale(1.05);
+}
+
+button:focus {
+    outline: 0 !important;
+}
+
+p {
+    color: black;
+    font-size: 150%;
+    text-align: center;
 }
 
 /* reset button shouldn't always be visible */
