@@ -9,7 +9,8 @@ body {
 }
 
 button {
-    display: inline;
+    display: flex;
+    justify-content: center;
     font-family: 'Courier New', Courier, monospace;
     font-size: 15px;
     width: 20%;
