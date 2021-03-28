@@ -29,7 +29,7 @@ button:focus {
     outline: 0 !important;
 }
 
-@media only screen and (max-width: 1081px) {
+@media only screen and (max-width: 600px) {
     button {
         font-size: 11px;
     }
