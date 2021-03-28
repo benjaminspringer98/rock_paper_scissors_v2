@@ -11,6 +11,7 @@ body {
 button {
     display: inline;
     font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
     width: 20%;
     background-color: #343148FF;
     color: white;
@@ -26,6 +27,12 @@ button:hover {
 
 button:focus {
     outline: 0 !important;
+}
+
+@media only screen and (max-width: 500px) {
+    button {
+        font-size: 11px;
+    }
 }
 
 p {
